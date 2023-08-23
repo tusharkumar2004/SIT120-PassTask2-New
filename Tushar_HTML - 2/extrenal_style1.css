@@ -1,0 +1,33 @@
+/* extrenal_style.css */
+table {
+    width: 40%;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+form {
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    table {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 12px;
+    }
+
+}

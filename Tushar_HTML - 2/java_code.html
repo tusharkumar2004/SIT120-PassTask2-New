@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TUSHAR || JavaScript Methods</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 20px;">
+
+    <h1 id="myHeading">This file is an HTML with Javascripts methods</h1>
+    <button id="myButton">Click on this button</button>
+    <p id="demo" style="margin-top: 20px;"></p>
+
+    <script>
+		// JAVAScript String methods
+        var myString = "   This is a JavaScript HTML code made by Tushar for Pass Task 2  ";
+        var trimmedString = myString.trim();
+        var upperCaseString = myString.toUpperCase();
+        var lowerCaseString = myString.toLowerCase();
+        var slicedString = myString.slice(5, 15);
+
+        //JAVAScript  Number methods
+        var myNumber = 42;
+        var numberAsString = myNumber.toString();
+        var fixedNumber = myNumber.toFixed(2);
+        var exponentialNumber = myNumber.toExponential(3);
+        var parsedNumber = parseFloat("3.14");
+
+        //JAVAScript  Array methods
+        var myArray = [1, "tushar kumar in australia", true, 42, "I am from India"];
+        var arrayLength = myArray.length;
+        var poppedItem = myArray.pop();
+        var shiftedItem = myArray.shift();
+        var joinedArray = myArray.join(", ");
+        var reversedArray = myArray.reverse();
+
+        //JAVAScript  Date methods
+        var currentDate = new Date();
+        var year = currentDate.getFullYear();
+        var month = currentDate.getMonth(); // 0-11
+        var day = currentDate.getDate();
+        var hours = currentDate.getHours();
+        var minutes = currentDate.getMinutes();
+
+        // Function methods
+        function sayHello() {
+            alert("Hello! This Pop-up is designed by Tushar");
+        }
+
+        var button = document.getElementById("myButton");
+        button.addEventListener("click", sayHello);
+
+        // Displaying results
+        var demo = document.getElementById("demo");
+        demo.innerHTML =
+            "<strong>JavaScript String methods:</strong><br>" +
+            "Trimmed String: " + trimmedString + "<br>" +
+            "Upper Case String: " + upperCaseString + "<br>" +
+            "Lower Case String: " + lowerCaseString + "<br>" +
+            "Sliced String: " + slicedString + "<br><br>" +
+            
+            "<strong>JavaScript Number methods:</strong><br>" +
+            "Number as String: " + numberAsString + "<br>" +
+            "Fixed Number: " + fixedNumber + "<br>" +
+            "Exponential Number: " + exponentialNumber + "<br>" +
+            "Parsed Number: " + parsedNumber + "<br><br>" +
+            
+            "<strong>JavaScript Array methods:</strong><br>" +
+            "Array Length: " + arrayLength + "<br>" +
+            "Popped Item: " + poppedItem + "<br>" +
+            "Shifted Item: " + shiftedItem + "<br>" +
+            "Joined Array: " + joinedArray + "<br>" +
+            "Reversed Array: " + reversedArray + "<br><br>" +
+            
+            "<strong>JavaScript Date methods:</strong><br>" +
+            "Year: " + year + "<br>" +
+            "Month: " + month + "<br>" +
+            "Day: " + day + "<br>" +
+            "Hours: " + hours + "<br>" +
+            "Minutes: " + minutes;
+    </script>
+</body>
+</html>
